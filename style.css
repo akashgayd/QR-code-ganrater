@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 22, 31);
+    font-family: 'poppils', arial, sans-serif;
+    text-transform: capitalize;
+  
+}
+
+
+
+
+.main_div{
+    width: 100%;
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.main_div p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.main_div input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    font-size: 19px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.main_div button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgray;
+    background-color: rgb(20, 147, 138);
+    margin-top: 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#imgBox{
+    width: 200px;
+    max-height: 0;
+    border-radius: 8px;
+    /* border: 1px solid lightgray; */
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgBox.showImg{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+}
+.error{
+animation: shack 0.1s linear 10;
+}
+@keyframes  shack{
+    
+    0%{
+        transform: translateX(0);
+        
+    }
+    25%{
+        transform: translateX(-2px);
+        
+    }
+    50%{
+        transform: translateX(0);
+        
+    }
+    75%{
+        transform: translateX(-2px);
+        
+    }
+    100%{
+        transform: translateX(0);
+        
+    }
+}
+@media (min-width:768px) {
+    
+
+.main_div{
+    width: 400px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+
+}
+.main_div p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.main_div input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    font-size: 19px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.main_div button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgray;
+    background-color: rgb(20, 147, 138);
+    margin-top: 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#imgBox{
+    width: 200px;
+    max-height: 0;
+    border-radius: 8px;
+    /* border: 1px solid lightgray; */
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgBox.showImg{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+}
+.error{
+animation: shack 0.1s linear 10;
+}
+@keyframes  shack{
+    
+    0%{
+        transform: translateX(0);
+        
+    }
+    25%{
+        transform: translateX(-2px);
+        
+    }
+    50%{
+        transform: translateX(0);
+        
+    }
+    75%{
+        transform: translateX(-2px);
+        
+    }
+    100%{
+        transform: translateX(0);
+        
+    }
+}
+}
